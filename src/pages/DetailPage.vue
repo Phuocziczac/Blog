@@ -168,6 +168,7 @@ span {
     h1 {
         max-width: 350px;
         margin-bottom: 70px;
+        padding-bottom: 20px;
     }
 
     img {
@@ -178,10 +179,12 @@ span {
 
     .break {
         max-width: 350px;
+        padding-bottom: 20px;
     }
 
     .img {
         max-width: 350px;
+        padding-bottom: 20px;
     }
 
     .detail {

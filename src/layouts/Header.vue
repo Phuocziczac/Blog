@@ -76,12 +76,13 @@ const getAll = () => {
           <div @click="toggleTopicDropdown" class="topic-title">
             Topic
             <img src="../components/icons/arrow-down.svg" alt="Arrow Down" class="arrow-icon">
-          </div>
-          <div v-if="showTopicDropdown" class="topic-dropdown">
-            <div v-for="post in uniqueTopics" :key="post.id" @click="toPage(`/topic/${post.topic} `, 'topic')">
-              {{ post.topic }}
+            <div v-if="showTopicDropdown" class="topic-dropdown">
+              <div v-for="post in uniqueTopics" :key="post.id" @click="toPage(`/topic/${post.topic} `, 'topic')">
+                {{ post.topic }}
+              </div>
             </div>
           </div>
+
 
         </div>
         <div class="btn">
@@ -219,6 +220,7 @@ const getAll = () => {
 /* Định nghĩa cho navigation */
 .nav {
   display: flex;
+  text-decoration: none;
   gap: 70px;
   /* Khoảng cách giữa các phần tử */
   justify-content: flex-end;
@@ -233,7 +235,7 @@ const getAll = () => {
 /* Định nghĩa cho các item trong nav */
 .nav div {
   font-size: 16px;
-
+  text-decoration: none;
 }
 
 
@@ -295,7 +297,8 @@ const getAll = () => {
 
   .nav div {
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0px solid #ddd;
+
     font-size: 14px;
   }
 

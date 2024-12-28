@@ -131,6 +131,9 @@ toastr.options = {
     "positionClass": "toast-top-right", // Vị trí của Toast
     "timeOut": "5000", // Thời gian hiển thị toast (5000ms = 5 giây)
 };
+function goToDetail(id) {
+    router.push(`/detail/${id}`); // Chuyển hướng đến trang chỉnh sửa với id
+}
 </script>
 
 <template>
@@ -182,8 +185,8 @@ toastr.options = {
             <div class="list">
                 <ul>
                     <li class="recent-item" v-for="post in recentPosts" :key="post.id">
-                        <div> <span class="author">{{ post.topic }}</span> </div>
-                        {{ post.title }}
+                        <div @click="goToDetail(post.id)"> <span class="author">{{ post.topic }}</span> </div>
+                        <div @click="goToDetail(post.id)">{{ post.title }}</div>
 
                     </li>
                 </ul>

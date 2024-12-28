@@ -507,7 +507,7 @@ input {
 }
 
 @media screen and (max-width: 768px) {
-    .conten {
+    .content {
         max-width: 350px;
     }
 
