@@ -25,8 +25,6 @@
   </footer>
 </template>
 <style scoped>
-
-
 .social-icons {
   justify-content: flex-end;
   /* Căn giữa giữa các phần tử */
@@ -52,10 +50,12 @@
   /* margin-left: 500px; */
   font-family: 'Courier New', Courier, monospace;
 }
+
 @media screen and (max-width: 768px) {
   .footer {
     gap: 20px;
   }
+
   .social-icons {
     gap: 10px;
   }

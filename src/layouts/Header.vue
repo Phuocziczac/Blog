@@ -124,6 +124,7 @@ const getAll = () => {
   border-radius: 5px;
   z-index: 1000;
   width: 150px;
+
   display: flex;
   flex-direction: column;
 }
@@ -286,7 +287,11 @@ const getAll = () => {
     top: 50px;
     right: 10px;
     width: 200px;
+    height: 290px;
     padding: 10px;
+    gap: 20px;
+    margin-right: 0px;
+    margin-top: 70px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
 
